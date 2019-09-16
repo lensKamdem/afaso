@@ -1,0 +1,441 @@
+:root {
+  --primary: #5194cf;
+  --secondary: #231f20;
+
+  --gray: #848484;
+  --dark: #4c4e52;
+  --bg-light: #f0f1f5;
+  --white: #fff;
+  
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  --font-family-sans-serif: Verdana, Cabin, sans-serif;
+}
+
+/**
+* General Styles
+**********************************
+*/
+
+
+body {
+  font-family: var(--font-family-sans-serif);
+  color: var(--dark);
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--secondary);
+}
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.btn {
+  padding: .7rem 1rem;
+  border-radius: 20px;
+  border-width: 2px;
+  border-color: var(--primary);
+}
+.btn-primary {
+  background-color: var(--primary);
+}
+.btn-primary:hover {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+}
+.btn-light {
+  border: 2px var(--gray) solid;
+}
+.btn-light:hover {
+  border-color: var(--primary);
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+a:hover {
+ text-decoration: none;
+ color: var(--primary);
+}
+/**
+*
+*/
+
+
+.about, .projects, .services, .volunteer, .team, .testimony, .partners {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.projects, .partners {
+  background-color: #f0f1f5;
+}
+
+.volunteer h2, .testimony h2, .footer h2 {
+  color: var(--white);
+}
+
+
+.info-header {
+  position: relative;
+  top: 0;
+  font-size: .9rem;
+}
+.info-header .container {
+  
+}
+.info-header .fab {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+}
+.info-header .row>div:nth-child(1) {
+  background-color: var(--secondary);
+  color: var(--white);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 5rem;
+}
+.info-header .row>div:nth-child(2) {
+  background-color: var(--primary);
+  color: var(--white);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 5rem;
+}
+
+.navbar {
+  background-color: var(--white);
+  border-bottom: 1px var(--bg-light) solid;
+  box-shadow: 0 1px 1px var(--bg-light);
+  /* top: 50px; */
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border: 4px var(--primary) solid;
+  border-radius: 100%;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.navbar {
+  color: black;
+}
+.nav-item {
+  font-size: 1.2rem;
+  position: relative;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  font-weight: 500;
+}
+.active .nav-link::after {
+  position: absolute;
+  content: '';
+  background: var(--primary);
+  width: 90%;
+  height: 3px;
+  left: 7px;
+  bottom: -5px;
+  transition: all 500ms ease;
+}
+.nav-link:hover::after {
+  position: absolute;
+  content: '';
+  background: var(--primary);
+  width: 90%;
+  height: 3px;
+  left: 7px;
+  bottom: -5px;
+  transition: all 500ms ease;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: black;
+}
+
+
+.carousel {
+  position: relative;
+}
+.carousel .carousel-item {
+  max-height: 40rem;
+}
+.carousel-caption {
+  position: absolute;
+  bottom: unset;
+  top: 20%;
+  left: 5%;
+  text-align: left;
+  font-size: 1.5rem;
+}
+.carousel-caption h4 {
+  color: var(--white);
+  font-size: 5rem;
+}
+.carousel-caption h4 .ptext {
+  color: var(--primary);
+}
+.carousel-item::before {
+  position: absolute;
+  content: '';
+  background: rgba(0, 7, 8, 0.274);
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+
+.quick-action {
+  color: var(--white);
+}
+.quick-action .container {
+  border: 2px var(--primary) solid;
+  border-radius: 20px;
+  position: relative;
+  top: -100px;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  background-color: rgb(81, 148, 207);
+}
+.quick-action .container:hover {
+  background-color: rgba(0, 7, 8, 0.938);
+  border-color: rgba(0, 7, 8, 0.938);
+}
+/*
+.quick-action .container::before {
+  position: absolute;
+  content: '';
+  background: rgb(81, 148, 207);
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+.quick-action .row .col-sm {
+  background-image: url(../img/about.jpg);
+  background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-position: center;
+  
+}
+*/
+
+.quick-action .btn {
+  border-color: var(--white);
+  background-color: transparent;
+  color: var(--white);
+}
+.quick-action .btn:hover {
+  border-color: var(--white);
+  background-color: var(--white);
+  color: var(--secondary);
+}
+.quick-action .fas {
+  font-size: 3rem;
+  padding: 1rem;
+}
+.quick-action h3 {
+  color: var(--white);
+}
+
+
+.about {
+  padding-top: 0;
+}
+.about img {
+  position: relative;
+  width: 85%;
+  max-height: 27rem;
+  border-radius: 20px;
+}
+
+
+.projects .card {
+  border-radius: 20px;
+}
+
+.services {
+
+}
+.services a img {
+  border-radius: 100%;
+  width: 15rem;
+  height: 15rem;
+  margin-bottom: 2rem;
+  border: 15px var(--bg-light) solid;
+}
+.services a h4 {
+  padding-bottom: 1rem;
+  text-decoration: none;
+}
+.services a h4:hover {
+  color: var(--primary);
+}
+.services a img:hover {
+  border-color: var(--primary);
+}
+
+.team .col-sm {
+  margin-top: 1rem;
+}
+.team img {
+  border-radius: 20px;
+  border: 15px var(--bg-light) solid;
+  margin-bottom: 2rem;
+}
+.team .col-sm p {
+  font-size: 1.5rem;
+  color: var(--secondary);
+  font-weight: 500;
+}
+.team span {
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.volunteer {
+  background-image: url(../img/volunteer.JPG);
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  color: var(--white);
+  position: relative;
+}
+
+.volunteer::before {
+  position: absolute;
+  content: '';
+  background: rgba(0, 7, 8, 0.8);
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+.volunteer .btn-primary:hover {
+  background-color: var(--white);
+  border-color: var(-white);
+  color: var(--primary);
+}
+
+
+.testimony {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.testimony .col-sm {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.bg-testimony {
+  background-image: url(../img/testi.JPG);
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  color: var(--white);
+  position: relative;
+}
+.bg-testimony::before {
+  position: absolute;
+  content: '';
+  background: rgba(0, 7, 8, 0.8);
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+.testimony .tt-slider {
+  background-color: var(--white);
+  color: var(--dark);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-shadow: 10px -10px 4px var(--bg-light);
+}
+.tt-slider img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+
+
+.partners img {
+  max-height: 7rem;
+  max-width: 10rem;
+  margin-bottom: 2rem;
+}
+
+.ft-body {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #1e2129;
+  color: #9ea0a9;
+  background-image: url('../img/footer-pattern.png');
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: .9rem;
+}
+.ft-body h3, .title {
+  color: var(--white);
+  padding-bottom: 1.5rem;
+}
+.title {
+  font-size: 2rem;
+}
+.title:hover {
+  color: var(--white);
+}
+.ft-logo {
+  margin-bottom: 1rem;
+}
+.ft-body .fab {
+  padding: 1rem;
+  border-radius: 50%;
+  background: #2e3138;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(46, 49, 56);
+    color: #9ea0a9;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+.ft-social {
+  padding-top: 1rem;
+}
+.list-unstyled li {
+  margin-bottom: 1rem;
+}
+.list-unstyled a {
+  color: #9ea0a9;
+}
+.ft-footer {
+  background-color: #13151a;
+  color: var(--dark);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.ft-footer p {
+  margin: 0;
+}
