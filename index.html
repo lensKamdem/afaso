@@ -12,6 +12,9 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="styles/main.css">
 
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+
     <!-- Font Awesome Icon Kit-->
     <script src="https://kit.fontawesome.com/1b909b6dd0.js"></script>
     
@@ -23,22 +26,26 @@
     <div class="info-header">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-3">
-            <div>
+          <div class="col-md-4 col-xl-3">
+            
               Follow us:
-              <span class="fab fa-facebook"></span>
-              <span class="fab fa-linkedin"></span>
-            </div>
+              <a href="#">
+                <span class="fab fa-facebook"></span>
+              </a>
+              <a href="#">
+                <span class="fab fa-linkedin"></span>
+              </a>
+            
           </div>
-          <div class="col-9 ">
+          <div class="col-md-8 col-xl-9">
             <div class="d-flex ml-auto justify-content-end">
               <div>
-                <span class="fa"></span>
-                Call: ....
+                <span class="fas fa-phone-alt"></span>
+                Call: (+237) 222 31 84 77
               </div>
               <div>
-                <span class="fa"></span>
-                Email: ....
+                <span class="fas fa-envelope"></span>
+                Email: afasocm@yahoo.fr
               </div>
             </div>
           </div>
@@ -57,12 +64,12 @@
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" 
           data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="fas fa-bars"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Presentation</a>
@@ -78,7 +85,7 @@
             </li>
           </ul>
           <span class="navbar-text">
-            Pour la femme!
+            Santé - Vie - Progrés
           </span>
         </div>
       </div>
@@ -120,11 +127,11 @@
               </div>
             </div>
             <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="fas fa-angle-left" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="fas fa-angle-right" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
         </div>  
@@ -178,12 +185,14 @@
             <div>
               <h2>Nous menons des actions dans le social depuis 1999</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiu smod
-                tempor incidunt enim ad minim veniam quis nostrud exerc tation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  L’Association des Femmes Actives et Solidaires (AFASO) est une association à but non 
+                  lucratif de femmes d’horizons divers, sans distinction d’âge, de religion, ou de race, 
+                  infectées et affectées par le VIH/SIDA. 
+                  <br/>Créée en 1999 et légalisée le 29 Juillet 2000, 
+                  fait de l’améliorer les conditions de vie saine des personnes vivantes avec le VIH (PvVIH),
+                  des orphelins et enfants vulnérables (OEV).
               </p>
-              <a href="#" class="btn btn-primary">Découvrir</a>
+              <a href="#" class="btn btn-primary">Découvrez Nous</a>
             </div>
           </div>
           <div class="col-sm">
@@ -205,52 +214,87 @@
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiu smod
             </p>
+            <div class="slider">
+                <a class="" href="#project-slider" role="button" data-slide="prev">
+                    <span class="fas fa-angle-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="" href="#project-slider" role="button" data-slide="next">
+                    <span class="fas fa-angle-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
           </div>
         </div>
-        <div class="">
-            <div class="card-deck">
-                <div class="card">
-                  <img src="img/project1.JPG" class="card-img-top" alt="...">
+        <div class="row">
+          <div class="sliding">
+            <div id="project-slider" class="card-deck sl">
+                <div class="card sl-item active">
+                  <a href="#">
+                    <img src="img/project1.JPG" class="card-img-top" alt="...">
+                  </a>
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <p class="card-text"><small class="text-muted">Aout 2019</small></p>
                     <a href="#" class="btn btn-light">Lire Plus</a>
                   </div>
                 </div>
-                <div class="card">
+                <div class="card sl-item active">
                   <img src="img/project2.JPG" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <p class="card-text"><small class="text-muted">Jun 2019</small></p>
                     <a href="#" class="btn btn-light">Lire Plus</a>
                   </div>
                 </div>
-                <div class="card">
+                <div class="card sl-item active">
                   <img src="img/project3.JPG" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to...</p>
+                    <p class="card-text"><small class="text-muted">Avril 2019</small></p>
                     <a href="#" class="btn btn-light">Lire Plus</a>
                   </div>
                 </div>
+                <div class="card sl-item">
+                    <a href="#">
+                      <img src="img/project1.JPG" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Janvier 2019</small></p>
+                      <a href="#" class="btn btn-light">Lire Plus</a>
+                    </div>
+                  </div>
+                  <div class="card sl-item">
+                    <img src="img/project2.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <a href="#" class="btn btn-light">Lire Plus</a>
+                    </div>
+                  </div>
+                  <div class="card sl-item">
+                    <img src="img/project3.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <a href="#" class="btn btn-light">Lire Plus</a>
+                    </div>
+                  </div>
             </div>
+          </div>
         </div>
-        <!--
-        <div>
-          
-            <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-        -->
+        <div class="row justify-content-center">
+          <div class="col text-center">
+            <a href="#" class="btn btn-primary">Voir Tous</a>
+          </div>
+        </div> 
       </div>
     
     </section>
@@ -268,31 +312,36 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-sm-6 col-md text-center">
+          <div class="col-sm-6 col-md-6 col-lg text-center">
             <a href="#">
               <img src="img/serv6.JPG" alt="" class="img-fluid" />
-              <h4>Voluntaria</h4>
+              <h4>Voluntariat</h4>
             </a>
           </div>
-          <div class="col-sm-6 col-md text-center">
+          <div class="col-sm-6 col-md-6 col-lg text-center">
             <a href="#">
               <img src="img/serv1.JPG" alt="" class="img-fluid" />
               <h4>Prise en charge</h4>
             </a>
           </div>
-          <div class="col-sm-6 col-md text-center">
+          <div class="col-sm-6 col-md-6 col-lg text-center">
             <a href="#">
               <img src="img/serv2.JPG" alt="" class="img-fluid" />
               <h4>Prevention</h4>
             </a>
           </div>
-          <div class="col-sm-6 col-md text-center">
+          <div class="col-sm-6 col-md-6 col-lg text-center">
             <a href="#">
               <img src="img/serv4.png" alt="" class="img-fluid" />
               <h4>Promotion des droits</h4>
             </a>
           </div>
         </div>
+        <div class="row justify-content-center">
+          <div class="col text-center">
+            <a href="#" class="btn btn-primary">Voir Tous</a>
+          </div>
+        </div> 
       </div>
     </section>
     <!--
@@ -325,25 +374,30 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-sm-6 col-md text-center">
+          <div class="col-sm-6 col-lg text-center">
             <img src="img/team1.JPG" alt="" class="w-100" />
             <p>Atangana Atangana</p>
             <span>Cordinateur</span>
           </div>
-          <div class="col-sm-6 col-md text-center">
+          <div class="col-sm-6 col-lg text-center">
             <img src="img/team2.JPG" alt="" class="w-100" />
             <p>Atangana Atangana</p>
             <span>Cordinateur</span>
           </div>
-          <div class="col-sm-6 col-md text-center">
+          <div class="col-sm-6 col-lg text-center">
             <img src="img/team1.JPG" alt="" class="w-100" />
             <p>Atangana Atangana</p>
             <span>Cordinateur</span>
           </div>
-          <div class="col-sm-6 col-md text-center">
+          <div class="col-sm-6 col-lg text-center">
             <img src="img/team2.JPG" alt="" class="w-100" />
             <p>Atangana Atangana</p>
             <span>Cordinateur</span>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col text-center">
+            <a href="#" class="btn btn-primary">Voir Tous</a>
           </div>
         </div>
       </div>
@@ -355,23 +409,25 @@
       <div class=""></div>
       <div class="container">
         <div class="row justify-content-center align-items-center">
-          <div class="col-sm bg-testimony">
+          <div class="col-md-7 bg-testimony">
             <div class="col">
-              <h2>Ce que les gens disent</h2>
+              <h2>Temoignages</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiu smod
               </p>
-              <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+              <div class="slider">
+                <a class="" href="#project-slider" role="button" data-slide="prev">
+                    <span class="fas fa-angle-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="" href="#project-slider" role="button" data-slide="next">
+                    <span class="fas fa-angle-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
             </div>
           </div>
-          <div class="col-sm tt-slider">
+          <div class="col-md-5 tt-slider">
             <div>
               <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiu smod
@@ -379,9 +435,9 @@
                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                   in reprehenderit in voluptate velit esse cillum dolore eu fugiat
               </p>
-              <div>
-                <img src="img/team1.JPG" alt="" class="img-responsive" />
-                <div>
+              <div class="d-flex align-items-center tt-person">
+                <img src="img/team1.JPG" alt="" class="img-fluid" />
+                <div class="mx-3">
                   <p>Atangana</p>
                   <span>Cordinateur</span>
                 </div>
@@ -399,23 +455,23 @@
         <div class="row justify-content-around align-items-baseline">
           <div class="text-center">
             <img src="img/partners/CNLS logo.gif" alt="" class="d-block" />
-            <span>Partenairs</span>
+            <span></span>
           </div>
           <div class="text-center">
             <img src="img/partners/CRS logo.jpg" alt="" class="d-block" />
-            <span>Partenairs</span>
+            <span></span>
           </div>
           <div class="text-center">
             <img src="img/partners/Camnafaw.jpg" alt="" class="d-block" />
-            <span>Partenairs</span>
+            <span></span>
           </div>
           <div class="text-center">
             <img src="img/partners/Solidarité logo.png" alt="" class="d-block" />
-            <span>Partenairs</span>
+            <span></span>
           </div>
           <div class="text-center">
             <img src="img/partners/logo minsanté.jpg" alt="" class="d-block" />
-            <span>Partenairs</span>
+            <span></span>
           </div>
         </div>
       </div>
@@ -435,7 +491,11 @@
                 </a>
               </div>
               <p>
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                  L’Association des Femmes Actives et Solidaires. 
+                  <br/> <br/>
+                  Poir les personnes vivantes avec le VIH (PvVIH) 
+                  <br/>
+                  Et les orphelins et enfants vulnérables (OEV)
               </p>
               <div class="ft-social">
                 <a href="#" class="">
@@ -450,21 +510,25 @@
               <h3>Services</h3>
               <ul class="list-unstyled">
                 <li>
-                  <a href="#">voluntaria</a>
+                  <a href="#">Voluntariat</a>
                 </li>
                 <li>
-                  <a href="#">voluntaria</a>
+                  <a href="#">Prise En Charge</a>
                 </li>
                 <li>
-                  <a href="#">voluntaria</a>
+                  <a href="#">Promotion des Droits</a>
                 </li>
+                <li>
+                    <a href="#">Preventions</a>
+                  </li>
               </ul>
             </div>
             <div class="col-sm-4 text-center">
               <h3>Contacts</h3>
-              <p>Flat 20, Reynolds Neck,<br/> North Helenaville, FV77</p>
-              <p>+2(305) 587-3407</p>
-              <p>info@example.com</p>
+              <p>Sis Texaco Obili, Immeuble Onana, 2 ème étage
+                <br/>B.P.: 30 645 Yaoundé – Cameroun</p>
+              <p>(+237) 222 31 84 77</p>
+              <p>afasocm@yahoo.fr</p>
             </div>
           </div>
         </div>
@@ -482,8 +546,8 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
