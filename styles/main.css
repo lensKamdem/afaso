@@ -14,6 +14,7 @@
   --breakpoint-xl: 1200px;
 
   --font-family-sans-serif: Verdana, Cabin, sans-serif;
+  --font-family-serif:  'Slabo 27px', serif;
 }
 
 /**
@@ -24,10 +25,12 @@
 
 body {
   font-family: var(--font-family-sans-serif);
-  color: var(--dark);
+  color:  #5f6266fb;
 }
 h1, h2, h3, h4, h5, h6 {
   color: var(--secondary);
+  font-family: var(--font-family-serif);
+  font-weight: 600;
 }
 h2 {
   font-size: 3rem;
@@ -38,6 +41,8 @@ h2 {
   border-radius: 20px;
   border-width: 2px;
   border-color: var(--primary);
+  font-family: var(--font-family-serif);
+  font-weight: 600;
 }
 .btn-primary {
   background-color: var(--primary);
@@ -66,18 +71,12 @@ a:hover {
  text-decoration: none;
  color: var(--primary);
 }
+
+
+
 /**
 *
 */
-
-
-.about, .projects, .services, .volunteer, .team, .testimony, .partners {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-.projects, .partners {
-  background-color: #f0f1f5;
-}
 
 .volunteer h2, .testimony h2, .footer h2 {
   color: var(--white);
@@ -87,10 +86,19 @@ a:hover {
 .info-header {
   position: relative;
   top: 0;
-  font-size: .9rem;
+  font-size: .8rem;
 }
-.info-header .container {
+.info-header .row a {
+  color: var(--white);
+}
+.info-header .row a:hover {
+  color: rgba(204, 222, 224, 0.123);
   
+}
+.info-header .d-flex > div {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-left: 1px var(--white) solid;
 }
 .info-header .fab {
   padding-left: 1rem;
@@ -98,19 +106,20 @@ a:hover {
   font-size: 1rem;
 }
 .info-header .row>div:nth-child(1) {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   color: var(--white);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: .9rem;
+  padding-bottom: .9rem;
   padding-left: 5rem;
 }
 .info-header .row>div:nth-child(2) {
   background-color: var(--primary);
   color: var(--white);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: .9rem;
+  padding-bottom: .9rem;
   padding-right: 5rem;
 }
+
 
 .navbar {
   background-color: var(--white);
@@ -133,13 +142,21 @@ a:hover {
 .navbar {
   color: black;
 }
+.navbar-toggler .fas {
+  color: var(--secondary);
+  font-size: 2rem;
+}
+.navbar-toggler {
+  border: none;
+}
 .nav-item {
   font-size: 1.2rem;
   position: relative;
 }
 .navbar-light .navbar-nav .nav-link {
   color: black;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: var(--font-family-serif);
 }
 .active .nav-link::after {
   position: absolute;
@@ -169,8 +186,11 @@ a:hover {
 .carousel {
   position: relative;
 }
+.carousel-inner img {
+  height: 100%;
+}
 .carousel .carousel-item {
-  max-height: 40rem;
+  height: 40rem;
 }
 .carousel-caption {
   position: absolute;
@@ -196,6 +216,23 @@ a:hover {
   left: 0px;
   top: 0px;
 }
+.carousel-control-prev {
+  top: 270px;
+  left: 0;
+}
+.carousel-control-next {
+  top: 270px;
+  left: 80px;
+}
+.carousel a .fas {
+  color: var(--secondary);
+  background-color: var(--white);
+  border-radius: 50%;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
 
 
 .quick-action {
@@ -206,33 +243,20 @@ a:hover {
   border-radius: 20px;
   position: relative;
   top: -100px;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding: O;
   background-color: rgb(81, 148, 207);
 }
 .quick-action .container:hover {
-  background-color: rgba(0, 7, 8, 0.938);
+  background-color: rgba(0, 7, 8, 0.970);
   border-color: rgba(0, 7, 8, 0.938);
 }
-/*
-.quick-action .container::before {
-  position: absolute;
-  content: '';
-  background: rgb(81, 148, 207);
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-}
-.quick-action .row .col-sm {
-  background-image: url(../img/about.jpg);
-  background-size: cover;
-    background-repeat: no-repeat;
-    
-    background-position: center;
+
+.quick-action .row > div {
+  padding: 1rem 1rem 2rem 1rem;
   
 }
-*/
+
+
 
 .quick-action .btn {
   border-color: var(--white);
@@ -255,6 +279,7 @@ a:hover {
 
 .about {
   padding-top: 0;
+  padding-bottom: 6rem;
 }
 .about img {
   position: relative;
@@ -264,12 +289,82 @@ a:hover {
 }
 
 
+.projects{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #f0f1f5;
+}
+.projects .row:nth-child(1) {
+  margin-bottom: 2rem;
+}
+.slider .fas {
+  color: var(--secondary);
+  padding: 0 1rem 0 1rem;
+  font-size: 2rem;
+}
 .projects .card {
   border-radius: 20px;
 }
+.projects .card > a {
+  position: relative;
+  display: block;
+}
+.projects .card>a::before:hover {
+  background-color: rgba(81, 148, 207, 0.747);
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+.projects .card-deck {
+  margin-bottom: 2rem;
+}
+.sliding {
+  position: relative;
+  z-index: 1;
 
-.services {
+}
+.sliding .sl {
+  /*
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  */
+  
+}
+.sliding .sl-item {
+  display: none;
+  /*
+  position: relative;
+  float: left;
+  
+ /* transform: translate(-200px, 0); 
+  transition: all 3s ease 0s;
+  /* transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out; 
+  
+  transition-property: ;
+  transition-duration: 5s;
+  transition-timing-function: ease;
+  transition-delay: 5s;
 
+  transform: translate(-200px, 0);
+  
+  width: 100%;
+  */
+}
+.sliding .active {
+  display: block;
+}
+
+
+ .services {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.services .row:nth-child(1) {
+  margin-bottom: 2rem;
 }
 .services a img {
   border-radius: 100%;
@@ -288,25 +383,43 @@ a:hover {
 .services a img:hover {
   border-color: var(--primary);
 }
+.services .row:nth-child(2) {
+  margin-bottom: 2rem;
+}
 
-.team .col-sm {
-  margin-top: 1rem;
+
+.team {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.team .row:nth-child(1) {
+  margin-bottom: 2rem;
+}
+.team .row:nth-child(2) {
+  margin-bottom: 2rem;
 }
 .team img {
   border-radius: 20px;
-  border: 15px var(--bg-light) solid;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
-.team .col-sm p {
-  font-size: 1.5rem;
+.team .row:nth-child(2) p {
+  font-size: 1.3rem;
   color: var(--secondary);
   font-weight: 500;
+  margin-bottom: 0;
+  font-family: var(--font-family-serif);
 }
 .team span {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--primary);
 }
 
+
+ .volunteer {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
 .volunteer {
   background-image: url(../img/volunteer.JPG);
   background-size: cover;
@@ -316,7 +429,6 @@ a:hover {
   color: var(--white);
   position: relative;
 }
-
 .volunteer::before {
   position: absolute;
   content: '';
@@ -333,13 +445,15 @@ a:hover {
 }
 
 
-.testimony {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.testimony .col-sm {
+.testimony .row > div {
   padding-top: 7rem;
   padding-bottom: 7rem;
+}
+.testimony .slider .fas {
+  color: var(--white);
+}
+.testimony .bg-testimony p {
+  margin-bottom: 2rem;
 }
 .bg-testimony {
   background-image: url(../img/testi.JPG);
@@ -364,20 +478,48 @@ a:hover {
   color: var(--dark);
   padding-left: 2rem;
   padding-right: 2rem;
-  box-shadow: 10px -10px 4px var(--bg-light);
+  box-shadow: 10px 15px 8px var(--bg-light);
+  border-top: 10px var(--bg-light) dotted;
+}
+.tt-slider > div > p {
+  color: var(--gray);
 }
 .tt-slider img {
   width: 80px;
   height: 80px;
   border-radius: 100%;
+  border: 3px var(--bg-light) solid;
+  margin-bottom: .5rem;
+}
+.tt-person p {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: var(--secondary);
+  margin-bottom: 0;
+  font-family: var(--font-family-serif);
+}
+.tt-person span {
+  font-size: .8rem;
+  color: var(--primary);
 }
 
 
+ .partners {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: var(--white);
+}
 .partners img {
   max-height: 7rem;
   max-width: 10rem;
   margin-bottom: 2rem;
 }
+.partners .row span {
+  font-weight: 500;
+  color: var(--secondary);
+}
+
+
 
 .ft-body {
   padding-top: 5rem;
@@ -392,7 +534,8 @@ a:hover {
 }
 .ft-body h3, .title {
   color: var(--white);
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.2rem;
+  
 }
 .title {
   font-size: 2rem;
@@ -421,6 +564,9 @@ a:hover {
   font-size: 1.2rem;
   margin-right: 10px;
 }
+.ft-body .fab:hover {
+  color: var(--white);
+}
 .ft-social {
   padding-top: 1rem;
 }
@@ -430,6 +576,9 @@ a:hover {
 .list-unstyled a {
   color: #9ea0a9;
 }
+.list-unstyled a:hover {
+  color: var(--white);
+}
 .ft-footer {
   background-color: #13151a;
   color: var(--dark);
@@ -438,4 +587,68 @@ a:hover {
 }
 .ft-footer p {
   margin: 0;
+}
+
+
+/**
+*
+*/
+
+@media (max-width: 768px) {
+  .info-header .d-flex > div {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .info-header .fab {
+    padding-left: .5rem;
+   padding-right: .5rem;
+  }
+  .info-header .row>div:nth-child(1) {
+    padding-left: 1.5rem;
+  }
+  .info-header .row>div:nth-child(2) {
+    padding-right: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+.info-header {
+  display: none;
+}
+.quick-action {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.about .row img {
+  margin-top: 2rem;
+  width: 100%;
+}
+.ft-social {
+  text-align: center;
+}
+.ft-body .row :nth-child(2), .ft-body .row :nth-child(3) {
+  margin-top: 2rem;
+}
+.card {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.carousel-caption {
+  font-size: 1rem;
+  left: 1rem;
+  display: block!important;
+}
+.carousel .carousel-item {
+  height: 450px;
+}
+.carousel .carousel-caption h4 {
+  font-size: 2.5rem;
+}
+.carousel .carousel-control-prev {
+  top: 150px;
+  left: 16px;
+}
+.carousel .carousel-control-next {
+  top: 150px;
+  left: 100px;
+}
 }
