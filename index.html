@@ -21,6 +21,10 @@
 
     <!-- Font Awesome Icon Kit-->
     <script src="https://kit.fontawesome.com/1b909b6dd0.js"></script>
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     
   </head>
   <body>
@@ -63,7 +67,7 @@
       <nav class="navbar sticky-top navbar-expand-lg navbar-light">
           <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="img/afaso_logo.png" class="d-inline-block logo" alt="">
+          <img src="img/afaso_logo.png" class="d-inline-block logo" alt="afaso-logo">
             AFASO
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" 
@@ -76,16 +80,16 @@
               <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Presentation</a>
+              <a class="nav-link" href="./about.html">Presentation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projets</a>
+              <a class="nav-link" href="./projects.html">Projets</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Equipe</a>  
+              <a class="nav-link" href="./team.html">Equipe</a>  
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="./contact.html">Contact</a>
             </li>
           </ul>
           <span class="navbar-text">
@@ -153,7 +157,7 @@
               <p>
                 Lorem ipsum dolor sit amet constur adipi- sicing elit sed do eiusm tempor incid
               </p>
-              <a href="##" class="btn btn-outline-primary">Lire Plus</a>
+              <a href="./contact.html#be-volunteer" class="btn btn-outline-primary">Lire Plus</a>
             </div>
           </div>
           <div class="col-sm text-center">
@@ -163,7 +167,7 @@
               <p>
                 Lorem ipsum dolor sit amet constur adipi- sicing elit sed do eiusm tempor incid
               </p>
-              <a href="#" class="btn btn-outline-primary">Lire Plus</a>
+              <a href="./contact.html#donation" class="btn btn-outline-primary">Lire Plus</a>
             </div>
           </div>
           <div class="col-sm text-center">
@@ -173,7 +177,7 @@
               <p>
                 Lorem ipsum dolor sit amet constur adipi- sicing elit sed do eiusm tempor incid
               </p>
-              <a href="#" class="btn btn-outline-primary">Lire Plus</a>
+              <a href="./contact.html#contact-us" class="btn btn-outline-primary">Lire Plus</a>
             </div>
           </div>
         </div>
@@ -196,12 +200,12 @@
                   fait de l’améliorer les conditions de vie saine des personnes vivantes avec le VIH (PvVIH),
                   des orphelins et enfants vulnérables (OEV).
               </p>
-              <a href="#" class="btn btn-primary">Découvrez Nous</a>
+              <a href="./about.html" class="btn btn-primary">Découvrez Nous</a>
             </div>
           </div>
           <div class="col-sm">
               <div>
-                <img src="img/about.jpg" alt="" class="d-block"/>
+                <img src="img/about.jpg" alt="about us" class="d-block"/>
               </div>
           </div>
         </div>
@@ -219,11 +223,11 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiu smod
             </p>
             <div class="slider">
-                <a class="" href="#project-slider" role="button" data-slide="prev">
+                <a class="slider-next" href="#project-slider" role="button" data-slide="prev">
                     <span class="fas fa-angle-left" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                   </a>
-                  <a class="" href="#project-slider" role="button" data-slide="next">
+                  <a class="slider-prev" href="#project-slider" role="button" data-slide="next">
                     <span class="fas fa-angle-right" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
@@ -231,72 +235,45 @@
           </div>
         </div>
         <div class="row">
-          <div class="sliding">
-            <div id="project-slider" class="card-deck sl">
-                <div class="card sl-item active">
-                  <a href="#">
-                    <img src="img/project1.JPG" class="card-img-top" alt="...">
-                  </a>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Aout 2019</small></p>
-                    <a href="#" class="btn btn-light">Lire Plus</a>
-                  </div>
-                </div>
-                <div class="card sl-item active">
-                  <img src="img/project2.JPG" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Jun 2019</small></p>
-                    <a href="#" class="btn btn-light">Lire Plus</a>
-                  </div>
-                </div>
-                <div class="card sl-item active">
-                  <img src="img/project3.JPG" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to...</p>
-                    <p class="card-text"><small class="text-muted">Avril 2019</small></p>
-                    <a href="#" class="btn btn-light">Lire Plus</a>
-                  </div>
-                </div>
-                <div class="card sl-item">
+          <div class="owl-carousel owl-theme owl-loaded" id="projects-slider">
+            <div class="owl-stage-outer">
+              <div class="card-deck owl-stage">
+                  <div class="card  owl-item" style="width: 18rem;">
                     <a href="#">
                       <img src="img/project1.JPG" class="card-img-top" alt="...">
                     </a>
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Janvier 2019</small></p>
+                      <p class="card-text"><small class="text-muted">Aout 2019</small></p>
                       <a href="#" class="btn btn-light">Lire Plus</a>
                     </div>
                   </div>
-                  <div class="card sl-item">
+                  <div class="card owl-item" style="width: 18rem;">
                     <img src="img/project2.JPG" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <p class="card-text"><small class="text-muted">Jun 2019</small></p>
                       <a href="#" class="btn btn-light">Lire Plus</a>
                     </div>
                   </div>
-                  <div class="card sl-item">
+                  <div class="card owl-item" style="width: 18rem;">
                     <img src="img/project3.JPG" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to...</p>
+                      <p class="card-text"><small class="text-muted">Avril 2019</small></p>
                       <a href="#" class="btn btn-light">Lire Plus</a>
                     </div>
                   </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col text-center">
-            <a href="#" class="btn btn-primary">Voir Tous</a>
+            <a href="./projects.html" class="btn btn-primary">Voir Tous</a>
           </div>
         </div> 
       </div>
@@ -317,33 +294,33 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-sm-6 col-md-6 col-lg text-center">
-            <a href="#">
+            
               <img src="img/serv6.JPG" alt="" class="img-fluid" />
               <h4>Voluntariat</h4>
-            </a>
+            
           </div>
           <div class="col-sm-6 col-md-6 col-lg text-center">
-            <a href="#">
+            
               <img src="img/serv1.JPG" alt="" class="img-fluid" />
               <h4>Prise en charge</h4>
-            </a>
+            
           </div>
           <div class="col-sm-6 col-md-6 col-lg text-center">
-            <a href="#">
+            
               <img src="img/serv2.JPG" alt="" class="img-fluid" />
               <h4>Prevention</h4>
-            </a>
+            
           </div>
           <div class="col-sm-6 col-md-6 col-lg text-center">
-            <a href="#">
+            
               <img src="img/serv4.png" alt="" class="img-fluid" />
               <h4>Promotion des droits</h4>
-            </a>
+            
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col text-center">
-            <a href="#" class="btn btn-primary">Voir Tous</a>
+            <a href="./about.html#about-services" class="btn btn-primary">Voir Tous</a>
           </div>
         </div> 
       </div>
@@ -359,7 +336,7 @@
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiu smod
             </p>
-            <a href="#" class="btn btn-primary">Devenir Maintenant</a>
+            <a href="./contact.html#be-volunteer" class="btn btn-primary">Devenir Maintenant</a>
           </div>
         </div>
       </div>
@@ -401,7 +378,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col text-center">
-            <a href="#" class="btn btn-primary">Voir Tous</a>
+            <a href="./team.html" class="btn btn-primary">Voir Tous</a>
           </div>
         </div>
       </div>
@@ -420,11 +397,11 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiu smod
               </p>
               <div class="slider">
-                <a class="" href="#project-slider" role="button" data-slide="prev">
+                <a class="slider-prev" href="#tt-slider" role="button" data-slide="prev">
                     <span class="fas fa-angle-left" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                   </a>
-                  <a class="" href="#project-slider" role="button" data-slide="next">
+                  <a class="slider-next" href="#tt-slider" role="button" data-slide="next">
                     <span class="fas fa-angle-right" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
@@ -432,20 +409,41 @@
             </div>
           </div>
           <div class="col-md-5 tt-slider">
-            <div>
-              <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiu smod
-                  tempor incidunt enim ad minim veniam quis nostrud exerc tation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              </p>
-              <div class="d-flex align-items-center tt-person">
-                <img src="img/team1.JPG" alt="" class="img-fluid" />
-                <div class="mx-3">
-                  <p>Atangana</p>
-                  <span>Cordinateur</span>
+            <div class="owl-carousel owl-theme owl-loaded" id="tt-slider">
+            <div class="owl-stage-outer">
+              <div class="owl-stage d-flex">
+                <div class="owl-item">
+                  <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiu smod
+                      tempor incidunt enim ad minim veniam quis nostrud exerc tation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                      in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  </p>
+                  <div class="d-flex align-items-center tt-person">
+                    <img src="img/team1.JPG" alt="" class="img-fluid" />
+                    <div class="mx-3">
+                      <p>Atangana</p>
+                      <span>Cordinateur</span>
+                    </div>
+                  </div>
                 </div>
+                <div class="owl-item">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiu smod
+                        tempor incidunt enim ad minim veniam quis nostrud exerc tation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    </p>
+                    <div class="d-flex align-items-center tt-person">
+                      <img src="img/team2.JPG" alt="" class="img-fluid" />
+                      <div class="mx-3">
+                        <p>NO NO</p>
+                        <span>Cordinateur</span>
+                      </div>
+                    </div>
+                  </div>
               </div>
+            </div>
             </div>
           </div>
         </div>
@@ -456,27 +454,42 @@
     -->
     <section class="partners">
       <div class="container">
-        <div class="row justify-content-around align-items-baseline">
-          <div class="text-center">
-            <img src="img/partners/CNLS logo.gif" alt="" class="d-block" />
-            <span></span>
+        <div class="row mb-3">
+          <div class="col-sm text-center">
+            <h2>Nos Partenaires</h2>
           </div>
-          <div class="text-center">
-            <img src="img/partners/CRS logo.jpg" alt="" class="d-block" />
-            <span></span>
-          </div>
-          <div class="text-center">
-            <img src="img/partners/Camnafaw.jpg" alt="" class="d-block" />
-            <span></span>
-          </div>
-          <div class="text-center">
-            <img src="img/partners/Solidarité logo.png" alt="" class="d-block" />
-            <span></span>
-          </div>
-          <div class="text-center">
-            <img src="img/partners/logo minsanté.jpg" alt="" class="d-block" />
-            <span></span>
-          </div>
+        </div>
+        <div class="row">
+         <div class="owl-carousel owl-theme owl-loaded" id="partner-slider">
+           <div class="owl-stage-outer">
+             <div class="owl-stage d-flex align-items-baseline">
+               <div class="owl-item text-center">
+                   <img src="img/partners/logo minsanté.jpg" alt="" class="d-block" />
+                   <span>MINSANTE</span>
+                 </div>
+               <div class="owl-item text-center">
+                 <img src="img/partners/CNLS logo.gif" alt="" class="d-block" />
+                 <span>CNLS</span>
+               </div>
+               <div class="owl-item text-center">
+                 <img src="img/partners/Solidarité logo.png" alt="" class="d-block" />
+                 <span>Solidarité SIDA</span>
+               </div>
+               <div class="owl-item text-center">
+                   <img src="img/partners/CRS logo.jpg" alt="" class="d-block" />
+                   <span>CRS</span>
+                 </div>
+                 <div class="owl-item text-center">
+                   <img src="img/partners/Camnafaw.jpg" alt="" class="d-block" />
+                   <span>CAMAFAW</span>
+                 </div>
+                 <div class="owl-item text-center">
+                     <img src="img/partners/PEPFAR.jpg" alt="" class="d-block" />
+                     <span>PEPFAR</span>
+                  </div>
+             </div>
+           </div>
+         </div>
         </div>
       </div>
     </section>
@@ -490,7 +503,7 @@
             <div class="col-sm-4">
               <div class="ft-logo">
                 <a class="title" href="#">
-                  <img src="img/afaso_logo.png" width="30" height="30" class="d-inline-block logo" alt="">
+                  <img src="img/afaso_logo.png" width="30" height="30" class="d-inline-block logo" alt="afaso-logo">
                     AFASO
                 </a>
               </div>
@@ -511,28 +524,30 @@
               </div>
             </div>
             <div class="col-sm-4 text-center">
-              <h3>Services</h3>
+              <h3>Liens Utiles</h3>
               <ul class="list-unstyled">
                 <li>
-                  <a href="#">Voluntariat</a>
+                  <a href="./about.html#hist-mission">Voir nos Missions</a>
                 </li>
                 <li>
-                  <a href="#">Prise En Charge</a>
+                  <a href="./about.html#about-services">Nos Services</a>
                 </li>
                 <li>
-                  <a href="#">Promotion des Droits</a>
+                  <a href="./projects.html#feat-project">Consulter nos Project</a>
                 </li>
                 <li>
-                    <a href="#">Preventions</a>
+                    <a href="./contact.html#be-volunteer">Devenir Bénévole</a>
                   </li>
               </ul>
             </div>
-            <div class="col-sm-4 text-center">
+            <div class="col-sm-4">
               <h3>Contacts</h3>
-              <p>Sis Texaco Obili, Immeuble Onana, 2 ème étage
-                <br/>B.P.: 30 645 Yaoundé – Cameroun</p>
+              <span class="fas fa-map-marker-alt mr-2 float-left"></span>
+              <p>Sis Texaco Obili, Immeuble Onana, 2 ème étage. B.P.: 30 645 Yaoundé – Cameroun</p>
+              <span class="fas fa-phone-alt mr-2 float-left"></span>
               <p>(+237) 222 31 84 77</p>
-              <p>afasocm@yahoo.fr</p>
+              <span class="fas fa-globe mr-2 float-left"></span>
+              <p>afasocm@yahoo.</p>
             </div>
           </div>
         </div>
@@ -549,6 +564,7 @@
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
     <!-- npm package
     <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
@@ -559,6 +575,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
-    <script src="main.js"></script>
+    <!-- Owl Carousel -->
+    <script src="./scripts/owl-carousel/owl.carousel.min.js"></script>
+
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
