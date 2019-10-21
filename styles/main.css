@@ -93,9 +93,9 @@ a:hover {
 .info-header .row a {
   color: var(--white);
 }
-.info-header .row a:hover {
-  color: rgba(204, 222, 224, 0.123);
-  
+.info-header a span:hover {
+  color: var(--secondary);
+
 }
 .info-header .d-flex > div {
   padding-left: 1rem;
@@ -105,7 +105,7 @@ a:hover {
 .info-header .fab {
   padding-left: 1rem;
   padding-right: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .info-header .row>div:nth-child(1) {
   background-color: var(--primary);
