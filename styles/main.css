@@ -395,7 +395,13 @@ a:hover {
   font-size: 1rem;
   color: var(--primary);
 }
-
+/*
+.team .row :nth-child(4) img {
+  transform: rotate(-90deg);
+  max-height: 30rem;
+  max-width: 12rem;
+}
+*/
 
  .volunteer {
   padding-top: 7rem;
@@ -473,12 +479,19 @@ a:hover {
 .tt-slider > div > p {
   color: var(--gray);
 }
-.tt-slider img {
+.tt-slider img  {
   width: 80px;
   height: 80px;
   border-radius: 100%;
   border: 3px var(--bg-light) solid;
   margin-bottom: .5rem;
+}
+.tt-slider .fas {
+  font-size: 4rem;
+  border-radius: 100%;
+  border: 3px var(--bg-light) solid;
+  margin-bottom: .5rem;
+  color: var(--primary);
 }
 .tt-person p {
   font-weight: 500;
@@ -751,6 +764,21 @@ a:hover {
   color: var(--secondary);
 }
 
+.gallery .container {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: translate3d(0px, 0px, 0px);
+} 
+
+#projects-gallery .card {
+  float: left;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+}
+
 /**
 * Team Page Styles
 **********************
@@ -868,17 +896,18 @@ a:hover {
   .ft-body .row :nth-child(2), .ft-body .row :nth-child(3) {
     margin-top: 2rem;
   }
-  .card {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
+  
   .carousel-caption {
     font-size: 1rem;
     left: 1rem;
     display: block!important;
+    top: 19%;
   }
   .carousel .carousel-item {
     height: 450px;
+  }
+  .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
+    top: 16%;
   }
   .carousel .carousel-caption h4 {
     font-size: 2.5rem;
@@ -897,5 +926,17 @@ a:hover {
   }
   .feat-project .row > :nth-child(1) {
     margin-bottom: 2rem;
+  }
+  .card-deck {
+    display: block!important;
+  }
+  .owl-stage .card {
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+  }
+  .owl-stage .card img {
+    width: 100%;
   }
 }

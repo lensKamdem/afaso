@@ -2,21 +2,23 @@ $(document).ready(function(){
   $('#projects-slider').owlCarousel({
     items: 1,
     loop: true,
-    margin: 80,
+    margin: 70,
     center: true,
     dots: false,
     nav: false,
     autoplay:true,
     autoplayTimeout:3000,
     autoplayHoverPause:true,
+    responsiveClass: true,
     responsive: {
       0: {
         items: 1,
-        margin: 0,
+        margin: 20,
+        
       },
       768: {
         items: 3,
-        margin: 10
+        margin: 10,
       },
       1024: {
         items: 3,
@@ -80,6 +82,64 @@ $(document).ready(function(){
     'display':'none'
   });
 
+  
+  $('#projects-gallery').owlCarousel({
+    items: 4,
+    loop: true,
+    margin: 30,
+    center: true,
+    dots: false,
+    nav: false,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 2,
+        margin: 10,
+        
+      },
+      768: {
+        items: 3,
+        margin: 20,
+      },
+      1024: {
+        items: 4,
+        margin: 40
+      },
+    }
+  });
+  // Go to the next item
+  $('#projects-gallery .btn').click(function() {
+    $("#projects-grid").trigger('next.owl.carousel');
+  });
+  $('#projects-gallery .owl-nav').css({
+    'display':'none'
+  });
+
+
+  
+  $('.ctb-btn').click(function() {
+    const name = $('.ctn #in-name').val();
+    const email = $('.ctn #in-email').val();
+    const subject = $('.ctn #in-sub').val();
+    const message = $('.ctn #in-msg').val();
+
+    Email.send({
+      Host : "smtp25.elasticemail.com",
+      Username : "kamdem.lens@gmail.com",
+      Password : "56838db9-8d08-46f0-9b1c-f75914cd8a9f",
+      To : 'kamdem.lens@gmail.com',
+      From : email,
+      Subject : subject,
+      Body : message,
+  }).then(
+    message => alert(message)
+  );
+
+
+  });
 
  
 });
