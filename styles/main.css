@@ -744,6 +744,10 @@ a:hover {
 * Project Page Styles
 **********************
 */
+.projects .card-deck img {
+  
+  height: 14rem;
+}
 .feat-project {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -778,6 +782,10 @@ a:hover {
   margin-bottom: 1rem;
   border-radius: 20px;
 }
+#projects-gallery .card img {
+  border-radius: 20px;
+  height: 10rem;
+}
 
 /**
 * Team Page Styles
@@ -796,6 +804,13 @@ a:hover {
 }
 #volunteers {
   padding-top: 5rem;
+}
+.ls-oriented {
+  transform: rotate(-90deg);
+  width: 11rem;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  height: 10rem;
 }
 
 /**

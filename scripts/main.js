@@ -121,10 +121,10 @@ $(document).ready(function(){
 
   
   $('.ctb-btn').click(function() {
-    const name = $('.ctn #in-name').val();
-    const email = $('.ctn #in-email').val();
-    const subject = $('.ctn #in-sub').val();
-    const message = $('.ctn #in-msg').val();
+    const name = document.getElementById('in-name').innerText;
+    const email = document.getElementById('in-email').innerText;
+    const subject = document.getElementById('in-sub').innerText;
+    const message = document.getElementById('in-msg').innerText;
 
     Email.send({
       Host : "smtp25.elasticemail.com",
