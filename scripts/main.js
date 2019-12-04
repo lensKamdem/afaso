@@ -124,18 +124,18 @@ $(document).ready(function(){
     const name = document.getElementById('in-name').innerText;
     const email = document.getElementById('in-email').innerText;
     const subject = document.getElementById('in-sub').innerText;
-    const message = document.getElementById('in-msg').innerText;
+    const body = document.getElementById('in-msg').innerText;
 
     Email.send({
-      Host : "smtp25.elasticemail.com",
+      Host : "smtp.elasticemail.com",
       Username : "kamdem.lens@gmail.com",
       Password : "56838db9-8d08-46f0-9b1c-f75914cd8a9f",
       To : 'kamdem.lens@gmail.com',
       From : email,
       Subject : subject,
-      Body : message,
+      Body : body,
   }).then(
-    message => alert(message)
+    message => alert("some message")
   );
 
 

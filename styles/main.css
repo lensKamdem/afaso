@@ -440,7 +440,7 @@ a:hover {
   margin-bottom: 2rem;
 }
 .bg-testimony {
-  background-image: url(../img/testi.JPG);
+  background-image: url(../img/testi.jpg);
   background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -811,6 +811,10 @@ a:hover {
   margin-left: 1rem;
   margin-right: 2rem;
   height: 10rem;
+}
+.img-sm {
+  height: 15rem;
+  width: 15rem;
 }
 
 /**
